@@ -1,0 +1,11 @@
+.map-container {
+  height: 100%;
+  border: blue solid thin;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+agm-map {
+  height: 100%;
+
+}

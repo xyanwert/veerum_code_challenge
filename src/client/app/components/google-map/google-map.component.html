@@ -1,0 +1,23 @@
+<div class="map-container">
+<agm-map [latitude]="37.769841" [longitude]="-122.444840" [styles]="styles" [zoom]="13" [clickableIcons]="!dataSource.busy">
+  <agm-marker *ngFor="let filmData of dataSource.filmsData"
+              [latitude]="filmData.geoLocation.latitude"
+              [longitude]="filmData.geoLocation.longitude">
+    <agm-snazzy-info-window [maxWidth]="400" [closeWhenOthersOpen]="true" [border]="0" [padding]="0" [maxHeight]="600">
+      <ng-template>
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>{{filmData.title}}</mat-card-title>
+            <mat-card-subtitle>{{filmData.releaseYear}}</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image src="https://image.tmdb.org/t/p/w500/hxWNP10OHmoh42C2qXLc17X3kcI.jpg" [alt]=" 'Photo of' + filmData.title" [height]="100">
+          <mat-card-content>{{filmData.actors[0]}}</mat-card-content>
+          <mat-card-footer>
+          </mat-card-footer>
+        </mat-card>
+      </ng-template>
+    </agm-snazzy-info-window>
+  </agm-marker>
+</agm-map>
+</div>
+

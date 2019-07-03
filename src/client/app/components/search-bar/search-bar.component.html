@@ -1,0 +1,15 @@
+<div class="content" fxLayout="column" fxLayoutAlign="end none" fxFlexFill>
+  <div>
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Find your favourite film</mat-label>
+      <input matInput placeholder="Search..." (change)="onTextChange($event)" [(ngModel)]="searchText" [disabled]="dataSource.busy">
+      <mat-icon matSuffix color="primary">search</mat-icon>
+        <mat-hint>
+          Search by movie title, Actors, Producer, etc...
+        </mat-hint>
+    </mat-form-field>
+  </div>
+</div>
+
+
+
