@@ -1,6 +1,10 @@
 # VEERUM code challenge
 ### Francisco Berridi
 
+## Pre-requisites
+* [npm](https://www.npmjs.com/get-npm)
+* [angular-cli](https://cli.angular.io)
+
 ## How to run it
 * `cd veerum_code_challenge`
 * modify the `.env` to simulate the required environment variables _*note: be mindful of the provided GooleAPI key, it will be disabled after it reaches the maximum calls for the trial)*_
