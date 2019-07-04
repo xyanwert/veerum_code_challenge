@@ -10,9 +10,11 @@
             <mat-card-title>{{filmData.title}}</mat-card-title>
             <mat-card-subtitle>{{filmData.releaseYear}}</mat-card-subtitle>
           </mat-card-header>
-          <img mat-card-image src="https://image.tmdb.org/t/p/w500/hxWNP10OHmoh42C2qXLc17X3kcI.jpg" [alt]=" 'Photo of' + filmData.title" [height]="100">
-          <mat-card-content>{{filmData.actors[0]}}</mat-card-content>
+          <mat-card-content>
+            <p>This film was shot in {{filmData.locations}}, wrote by {{filmData.writer}} and directed by {{filmData.director}}</p>
+          </mat-card-content>
           <mat-card-footer>
+            <p>With: {{filmData.actors[0]}}</p>
           </mat-card-footer>
         </mat-card>
       </ng-template>
@@ -20,4 +22,3 @@
   </agm-marker>
 </agm-map>
 </div>
-
