@@ -2,8 +2,9 @@
 ### Francisco Berridi
 
 ## Pre-requisites
+* This app runs in anglular 7
 * [npm](https://www.npmjs.com/get-npm)
-* [angular-cli](https://cli.angular.io)
+* angular-cli: npm install -g @angular/cli@7.3.9
 
 ## How to run it
 * `cd veerum_code_challenge`
@@ -12,3 +13,6 @@
 * run `npm install` to install the dependecies.
 * run `npm run start` to compile and start the server
 * Navigate to `http://localhost:<PORT>/` to access the app
+
+##NOTES
+The `TLS` setup is been left to the container, no SSL configuration was added.
