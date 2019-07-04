@@ -14,5 +14,5 @@
 * run `npm run start` to compile and start the server
 * Navigate to `http://localhost:<PORT>/` to access the app
 
-##NOTES
+## NOTES
 The `TLS` setup is been left to the container, no SSL configuration was added.
